@@ -14,9 +14,6 @@ RUN apt-get install -y redis-server \
 && apt-get update && apt-get install -y mongodb-org
 
 
-
-
-RUN git clone https://github.com/wificoin-project/wwas /app
 WORKDIR /app
 RUN npm install
 
