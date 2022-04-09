@@ -16,7 +16,7 @@ const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 var redis = require("redis");  
 var client = redis.createClient({
-    host: 'http://redis-13744.c292.ap-southeast-1-1.ec2.cloud.redislabs.com',
+    host: 'redis-13744.c292.ap-southeast-1-1.ec2.cloud.redislabs.com',
     port: 13744,
     password: 'vXXDdO0dIyBQdE1KIMmG8I3nuHkCGgJS'
 });  
