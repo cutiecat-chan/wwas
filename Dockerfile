@@ -5,7 +5,7 @@ ENV TZ=Asia/Jakarta
 
 RUN apt-get update && apt-get install -y build-essential g++ wget curl git
 RUN apt-get install -y redis-server \
-&& curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+&& curl -sL https://deb.nodesource.com/setup_17.x | bash - \
 && apt-get install -y nodejs \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/* \
