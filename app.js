@@ -136,7 +136,10 @@ function sendoffline(gwid){
     });
 }
 
-function subscribeRedisData() {   
+function subscribeRedisData() {
+    client.on("connect", () => {
+        console.log("Connected to our redis instance!");
+    });
     client.on("message", function (channel, message) {
         //console.log("expired:" + message);
         sendoffline(message);
