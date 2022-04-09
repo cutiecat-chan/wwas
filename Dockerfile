@@ -21,4 +21,4 @@ WORKDIR /app
 RUN npm install
 
 
-CMD ["bash","/app/start.sh"]
+CMD ["bash","start.sh"]
